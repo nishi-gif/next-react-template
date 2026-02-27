@@ -2,28 +2,30 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-blue-600 text-white">
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* サイトタイトル */}
-        <h1 className="text-xl font-bold">
-          <Link href="/">My React Site</Link>
+    <header className="bg-blue-600 text-white shadow-md">
+      <div className="px-6 py-4">
+        {/* 1段目：サイトタイトル */}
+        <h1 className="text-2xl font-bold leading-tight">
+          <Link href="/" className="hover:opacity-90">
+            My React Site
+          </Link>
         </h1>
 
-        {/* ナビゲーション */}
-        <nav className="flex gap-6 font-medium">
-          <Link href="/" className="hover:underline">
+        {/* 2段目：ナビ（タイトルの下に並ぶ） */}
+        <nav className="mt-3 flex gap-8 text-sm">
+          <Link href="/" className="hover:underline underline-offset-4">
             Home
           </Link>
-          <Link href="/about" className="hover:underline">
+          <Link href="/about" className="hover:underline underline-offset-4">
             About
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link href="/contact" className="hover:underline underline-offset-4">
             Contact
           </Link>
-          <Link href="/news" className="hover:underline">
+          <Link href="/news" className="hover:underline underline-offset-4">
             News
           </Link>
-          <Link href="/products" className="hover:underline">
+          <Link href="/products" className="hover:underline underline-offset-4">
             Products
           </Link>
         </nav>
