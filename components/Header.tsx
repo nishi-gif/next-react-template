@@ -7,7 +7,7 @@ export default function Header() {
         {/* 1段目：サイトタイトル */}
         <h1 className="text-2xl font-bold leading-tight">
           <Link href="/" className="hover:opacity-90">
-            My React Site
+            My NextJs Site
           </Link>
         </h1>
 
